@@ -26,14 +26,25 @@
         <p>Replace the placeholder media paths with your own image variants, then document the format, size, source, and accessibility purpose.</p>
       </div>
       <figure class="hero-media">
-        <div class="placeholder-image" role="img" aria-label="Placeholder for a responsive garden workshop image"></div>
+        <img 
+        src="assets/pretty-in-pink-800.jpg" 
+        srcset="assets/pretty-in-pink-480.jpg 480vw, assets/pretty-in-pink-800.jpg 800vw, assets/pretty-in-pink-1200.jpg 1200vw"
+        sizes="(max-width: 480) 480px, (max-width: 800px) 800px, (max-width: 1200px) 1200px, 1200w"
+        width="800"
+        height="618"
+        alt="Spiral galaxy with pink and purple arms"
+        >
         <figcaption>Replace this placeholder with responsive image markup and real asset notes.</figcaption>
       </figure>
     </section>
 
     <section class="section">
       <div class="section-heading">
-        <img class="section-icon" src="assets/sample-icon.svg" alt="" width="48" height="48">
+        <!-- <img class="section-icon" src="assets/sample-icon.svg" alt="" width="48" height="48"> -->
+        <svg width="48" height="48" aria-hidden="true" focusable="false" viewbox="0 0 48 48">
+          <title>Sample Icon</title>
+          <image href="assets/sample-icon.svg" width="48" height="48"/>
+        </svg>
         <div>
           <p class="eyebrow">Workshop cards</p>
           <h2>Use type scale, line length, and media dimensions intentionally.</h2>
